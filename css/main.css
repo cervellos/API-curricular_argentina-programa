@@ -12,7 +12,7 @@ body {
 }
 
 :root {
-  --base-redDark--: #280000;
+  --base-redDark: #280000;
   --base-orange: #da6606;
   --base-yellowDark--: #bbbb33;
   --base-yellowLight: #ffff92;
@@ -41,12 +41,12 @@ body {
 body {
   background-color: var(--Background-black);
   color: var(--Font-orange);
-  text-shadow: 0 0 2.5px var(--base-orange);
+  text-shadow: 0 0 10px var(--Font-red);
 }
 
 .card-container {
   border: 3px solid var(--Font-orange);
-  box-shadow: inset 0 0 5px var(--base-orange), 0 0 10px var(--base-orange);
+  box-shadow: inset 0 0 30px var(--base-redDark), 0 0 50px var(--base-redDark);
   border-radius: 50px;
   max-width: 400px;
   margin: auto;
