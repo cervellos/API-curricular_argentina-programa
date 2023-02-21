@@ -1,4 +1,4 @@
-.card-container {
+.card {
   border: 3px solid var(--Font-orange);
   box-shadow: inset 0 0 30px var(--base-redDark), 0 0 50px var(--base-redDark);
   border-radius: 50px;
@@ -6,6 +6,11 @@
   max-width: 400px;
   margin: auto;
   padding: 20px;
+  &_img {
+    border: 3px solid var(--Font-orange);
+    box-shadow: inset 0 0 30px var(--base-redDark), 0 0 50px var(--base-redDark);
+    border-radius: 20px;
+  }
   /* disable courser light
   &::before {
     background: radial-gradient(
