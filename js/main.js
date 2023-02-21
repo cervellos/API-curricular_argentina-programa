@@ -1,14 +1,14 @@
-console.log(document.querySelector("title").innerText);
+console.log(document.querySelector("title").innerText)
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetchData();
-});
+  fetchData()
+})
 
 const fetchData = async () => {
   try {
-    const res = await fetch("https://randomuser.me/api/");
-    const data = await res.json();
-    console.log(data);
+    const res = await fetch("https://randomuser.me/api/")
+    const data = await res.json()
+    console.log(data)
     const curriculum = {
       gender: data.results[0].gender,
       title: data.results[0].name.title,
@@ -34,27 +34,42 @@ const fetchData = async () => {
       //cell: data.results[0].registered.cell,
       id: data.results[0].id.name + " " + data.results[0].id.value,
       //info:results[0].info
-    };
-    console.log(curriculum);
+    }
+    console.log(curriculum)
 
-    paintCard(curriculum);
+    paintCard(curriculum)
   } catch (error) {
-    console.log(`error en fechtDATA${error}`);
+    console.log(`error en fechtDATA${error}`)
   }
-};
+}
 
 const paintCard = async (curriculum) => {
   try {
-    const res = await fetch("template/card.hbs");
-    const templateHbs = await res.text();
-    const template = Handlebars.compile(templateHbs);
-    const html = template({ curriculum });
-    console.log(html);
+    const res = await fetch("template/card.hbs")
+    const templateHbs = await res.text()
+    const template = Handlebars.compile(templateHbs)
+    const html = template({ curriculum })
+    console.log(html)
 
-    document.getElementsByClassName("card-container")[0].innerHTML = html;
+    document.getElementsByClassName("card-container")[0].innerHTML = html
   } catch (error) {
-    console.error(`este error esta en paintCard ${error}`);
+    console.error(`este error esta en paintCard ${error}`)
   }
-};
+}
+/* cursos pointer disabled
+const handleOnMouseMove = (e) => {
+  const { currentTarget: target } = e
 
-console.dir(document.getElementsByClassName("card-container")[0].innerHTML);
+  const rect = target.getBoundingClientRect(),
+    x = (e.clientX = rect.left),
+    y = (e.clientY = rect.top)
+
+  target.style.setProperty("--nouse-x", `${x}px`)
+  target.style.setProperty("--nouse-y", `${y}px`)
+}
+
+for (const card of document.querySelectorAll(".card-container")) {
+  card.onmousemove = (e) => handleOnMouseMove(e)
+}
+*/
+console.dir(document.getElementsByClassName("card-container")[0].innerHTML)
