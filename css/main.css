@@ -38,6 +38,13 @@ body {
 svg {
   border: 3px solid var(--Font-green);
   box-shadow: inset 0 0 30px var(--base-greenDark), 0 0 50px var(--base-greenDark);
+  width: 24px;
+  height: 24px;
+  stroke-width: 2px;
+  stroke: var(--Font-green);
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 body {
@@ -49,6 +56,11 @@ body {
   background-color: var(--Background-black);
   color: var(--Font-orange);
   text-shadow: 0 0 10px var(--Font-red);
+}
+
+.title {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .glow_border {

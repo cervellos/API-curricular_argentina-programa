@@ -3,6 +3,9 @@ body {
   color: var(--Font-orange);
   text-shadow: 0 0 10px var(--Font-red);
 }
+.title {
+  width: fit-content;
+}
 .glow_border {
   border: 3px solid var(--Font-orange);
   box-shadow: inset 0 0 30px var(--base-redDark), 0 0 50px var(--base-redDark);
