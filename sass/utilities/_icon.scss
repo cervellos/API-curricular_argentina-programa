@@ -9,4 +9,9 @@ svg {
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
+  &:hover {
+    stroke: #7cff7c;
+    border: 3px solid #7cff7c;
+    box-shadow: inset 0 0 30px var(--Font-green), 0 0 50px var(--Font-green);
+  }
 }

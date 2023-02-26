@@ -1,7 +1,7 @@
 {{#if true}}
   <article class="card glow_border">
     <img
-      src={{curriculum.img}}
+      src={{curriculum.large}}
       class="card_img glow_border"
       alt="imagen del curriculum"
       id="screen"
@@ -20,14 +20,21 @@
         latitud {{curriculum.latitude}} longitud{{curriculum.longitud}}
       <li>timezone :
           {{curriculum.timezone}}
-          timezoneDes
           {{curriculum.timezoneDes}}</li>
       </ul>
     </ul>
     <h2>Email : {{curriculum.email}}</h2>
     <h2>Age : {{curriculum.age}}</h2>
-    <h2>Id : {{curriculum.id}}</h2>
-    <p></p>
+    <h2>Date of Birth : {{curriculum.dateBirth}}</h2>
+    <h2>{{curriculum.id}}</h2>
+    <h4>info
+      <ul>
+        <li>Seed of code : {{curriculum.seed}}</li>
+        <li>results : {{curriculum.results}}</li>
+        <li>page of info: {{curriculum.page}}</li>
+        <li>version : v.{{curriculum.version}}</li>
+      </ul>
+    </h4>
   </article>
 {{else}}
 {{/if}}

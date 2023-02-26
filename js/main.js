@@ -10,11 +10,15 @@ const fetchData = async () => {
     const data = await res.json()
     console.log(data)
     const curriculum = {
+      /**personal data */
       gender: data.results[0].gender,
       title: data.results[0].name.title,
       firstName: data.results[0].name.first,
       lastName: data.results[0].name.last,
-      img: data.results[0].picture.large,
+      /**picture */
+      large: data.results[0].picture.large,
+      medium: data.results[0].picture.medium,
+      thumbnail: data.results[0].picture.thumbnail,
       /*location*/
       street:
         data.results[0].location.street.name +
@@ -31,14 +35,28 @@ const fetchData = async () => {
       timezoneDes: data.results[0].location.timezone.description,
       //personal data
       email: data.results[0].email,
-      //login: data.results[0].login,
-      date: data.results[0].dob.date,
+      //user credencial
+      uuid: data.results[0].login.uuid,
+      username: data.results[0].login.username,
+      password: data.results[0].login.password,
+      salt: data.results[0].login.salt,
+      md5: data.results[0].login.md5,
+      sha1: data.results[0].login.sha1,
+      sha256: data.results[0].login.sha256,
+      //date personal
+      dateBirth: data.results[0].dob.date,
       age: data.results[0].dob.age,
-      //resgistered: data.results[0].resgistered,
-      //phone: data.results[0].registered.phone,
-      //cell: data.results[0].registered.cell,
-      id: data.results[0].id.name + " " + data.results[0].id.value,
-      //info:results[0].info
+      //resgistered:
+      date: data.results[0].registered.date,
+      ageResg: data.results[0].registered.age,
+      phone: data.results[0].phone,
+      cell: data.results[0].cell,
+      id: data.results[0].id.name + " : " + data.results[0].id.value,
+      //info
+      seed: data.info.seed,
+      results: data.info.results,
+      page: data.info.page,
+      version: data.info.version,
     }
     console.log(curriculum)
 
