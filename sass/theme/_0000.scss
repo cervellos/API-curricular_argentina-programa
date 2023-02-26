@@ -2,9 +2,11 @@ body {
   background-color: var(--Background-black);
   color: var(--Font-orange);
   text-shadow: 0 0 10px var(--Font-red);
+  filter: blur(0.4px);
 }
 .title {
   width: fit-content;
+  border-radius: 5px;
 }
 .glow_border {
   border: 3px solid var(--Font-orange);

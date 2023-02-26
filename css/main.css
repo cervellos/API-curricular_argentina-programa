@@ -56,11 +56,13 @@ body {
   background-color: var(--Background-black);
   color: var(--Font-orange);
   text-shadow: 0 0 10px var(--Font-red);
+  filter: blur(0.4px);
 }
 
 .title {
   width: -moz-fit-content;
   width: fit-content;
+  border-radius: 5px;
 }
 
 .glow_border {
@@ -69,9 +71,9 @@ body {
 }
 
 .card {
-  border-radius: 50px;
+  border-radius: 10px;
   position: relative;
-  max-width: 400px;
+  max-width: 900px;
   margin: auto;
   padding: 20px;
   /* disable courser light
@@ -97,5 +99,6 @@ body {
   }*/
 }
 .card_img {
-  border-radius: 20px;
+  filter: blur(0.6px);
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,11 +1,14 @@
 .card {
-  border-radius: 50px;
+  border-radius: 10px;
   position: relative;
-  max-width: 400px;
+  max-width: 900px;
   margin: auto;
   padding: 20px;
   &_img {
-    border-radius: 20px;
+    filter: blur(0.6px);
+    border-radius: 10px;
+  }
+  &_title {
   }
   /* disable courser light
   &::before {
