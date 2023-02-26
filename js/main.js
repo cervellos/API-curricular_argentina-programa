@@ -15,6 +15,7 @@ const fetchData = async () => {
       firstName: data.results[0].name.first,
       lastName: data.results[0].name.last,
       img: data.results[0].picture.large,
+      /*location*/
       street:
         data.results[0].location.street.name +
         " " +
@@ -23,8 +24,12 @@ const fetchData = async () => {
       state: data.results[0].location.state,
       country: data.results[0].location.country,
       postcode: data.results[0].location.postcode,
-      //coordinates: data.results[0].coordinates,
-      //timezone: data.results[0].timezone,
+      /**loaction coodernada */
+      latitude: data.results[0].location.coordinates.latitude,
+      longitude: data.results[0].location.coordinates.longitude,
+      timezone: data.results[0].location.timezone.offset,
+      timezoneDes: data.results[0].location.timezone.description,
+      //personal data
       email: data.results[0].email,
       //login: data.results[0].login,
       date: data.results[0].dob.date,

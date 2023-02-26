@@ -11,7 +11,19 @@
       {{curriculum.firstName}}
       {{curriculum.lastName}}</h2>
     <h2>Gender : {{curriculum.gender}}</h2>
-    <h2>City : {{curriculum.city}}</h2>
+    <ul><strong>Location</strong>
+      <li>City : {{curriculum.city}} </li>
+      <li>state : {{curriculum.state}}</li>
+      <li>country : {{curriculum.country}}</li>
+      <li>postcode : {{curriculum.postcode}}</li>
+      <li>coordinate :
+        latitud {{curriculum.latitude}} longitud{{curriculum.longitud}}
+      <li>timezone :
+          {{curriculum.timezone}}
+          timezoneDes
+          {{curriculum.timezoneDes}}</li>
+      </ul>
+    </ul>
     <h2>Email : {{curriculum.email}}</h2>
     <h2>Age : {{curriculum.age}}</h2>
     <h2>Id : {{curriculum.id}}</h2>
