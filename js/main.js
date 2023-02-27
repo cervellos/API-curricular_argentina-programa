@@ -75,6 +75,14 @@ const paintCard = async (curriculum) => {
     console.log(html)
 
     document.getElementsByClassName("card-container")[0].innerHTML = html
+    //evento botton debe ir adentro de la funcion de handlebars para funcionar correctamente
+    async function myFunction() {
+      document.querySelector(".offDisplay").style.display = "none"
+        ? "block"
+        : "none"
+    }
+    const element = document.querySelector(".button")
+    element.addEventListener("click", myFunction)
   } catch (error) {
     console.error(`este error esta en paintCard ${error}`)
   }
@@ -95,4 +103,6 @@ for (const card of document.querySelectorAll(".card-container")) {
   card.onmousemove = (e) => handleOnMouseMove(e)
 }
 */
+
+console.log(document.getElementById("myBtn"))
 console.dir(document.getElementsByClassName("card-container")[0].innerHTML)

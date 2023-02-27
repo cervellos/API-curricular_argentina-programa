@@ -1,0 +1,6 @@
+.offDisplay {
+  display: none;
+  &:hover {
+    display: flex;
+  }
+}
