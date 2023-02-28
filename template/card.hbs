@@ -11,6 +11,10 @@
       {{curriculum.firstName}}
       {{curriculum.lastName}}</h2>
     <h2>Gender : {{curriculum.gender}}</h2>
+    <h2>Email : {{curriculum.email}}</h2>
+    <h2>Age : {{curriculum.age}}</h2>
+    <h2>Date of Birth : {{curriculum.dateBirth}}</h2>
+    <h2>{{curriculum.id}}</h2>
     <a href="#" class="button boton-location">Location
     <ul class="display--off">
       <li>City : {{curriculum.city}} </li>
@@ -24,14 +28,30 @@
           {{curriculum.timezoneDes}}</li>
       </ul>
       </a>
-    <h2>Email : {{curriculum.email}}</h2>
-    <h2>Age : {{curriculum.age}}</h2>
-    <h2>Date of Birth : {{curriculum.dateBirth}}</h2>
-    <h2>{{curriculum.id}}</h2>
+      <a href="#" class="button boton-credencial">user credencial
+        <ul class="display--off">
+          <li>uuid : {{curriculum.uuid}}</li>
+          <li>username : {{curriculum.username}}</li>
+          <li>password : {{curriculum.password}}</li>
+          <li>salt : {{curriculum.salt}}</li>
+          <li>md5 : {{curriculum.md5}}</li>
+          <li>sha1 : {{curriculum.sha1}}</li>
+          <li>sha256 : {{curriculum.sha256}}</li>
+        </ul>
+      </a>
+      <a href="#" class="button boton-resgistered">resgistered
+        <ul class="display--off">
+          <li>dischard date : {{curriculum.date}}</li>
+          <li>time of system : {{curriculum.ageResg}}</li>
+          </ul>
+      </a>
+      <h4>phone : {{curriculum.phone}}</h4>
+      <h4>cell : {{curriculum.cell}}</h4>
+    
     
   </article>
   <article class=" title card_thumbnail glow_border">
-    <!-- Cambiar a verdad -->
+    <!-- Cambiar a verde -->
    <a  herf="# "class="button boton-info">View details
       <ul class="display--off">
         <li>Seed code : {{curriculum.seed}}</li>
