@@ -117,9 +117,6 @@ body {
   border-radius: 10px;
 }
 
-.offDisplay {
+.display--off {
   display: none;
-}
-.offDisplay:hover {
-  display: flex;
 }/*# sourceMappingURL=main.css.map */

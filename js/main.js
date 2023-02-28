@@ -1,3 +1,6 @@
+/**variable Global */
+
+/**variable global */
 console.log(document.querySelector("title").innerText)
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -76,13 +79,16 @@ const paintCard = async (curriculum) => {
 
     document.getElementsByClassName("card-container")[0].innerHTML = html
     //evento botton debe ir adentro de la funcion de handlebars para funcionar correctamente
-    async function myFunction() {
-      document.querySelector(".offDisplay").style.display = "none"
-        ? "block"
-        : "none"
+    const button = document.querySelector(".button")
+    const displays = document.querySelectorAll(".display--off")
+    console.log(displays)
+    async function toggleFunction(e) {
+      e.preventDefault()
+      displays.forEach((input) => {
+        input.classList.toggle("display--off")
+      })
     }
-    const element = document.querySelector(".button")
-    element.addEventListener("click", myFunction)
+    button.addEventListener("click", toggleFunction)
   } catch (error) {
     console.error(`este error esta en paintCard ${error}`)
   }
