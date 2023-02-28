@@ -79,16 +79,23 @@ const paintCard = async (curriculum) => {
 
     document.getElementsByClassName("card-container")[0].innerHTML = html
     //evento botton debe ir adentro de la funcion de handlebars para funcionar correctamente
-    const button = document.querySelector(".button")
+    const button = document.querySelectorAll(".button")
     const displays = document.querySelectorAll(".display--off")
-    console.log(displays)
+    console.log(button)
     async function toggleFunction(e) {
       e.preventDefault()
-      displays.forEach((input) => {
-        input.classList.toggle("display--off")
-      })
+      const targe = e.target.classList[1]
+      console.log(targe)
+      switch (targe) {
+        case "boton-info":
+          displays[1].classList.toggle("display--off")
+          break
+        case "boton-location":
+          displays[0].classList.toggle("display--off")
+          break
+      }
     }
-    button.addEventListener("click", toggleFunction)
+    button.forEach(addEventListener("click", toggleFunction))
   } catch (error) {
     console.error(`este error esta en paintCard ${error}`)
   }

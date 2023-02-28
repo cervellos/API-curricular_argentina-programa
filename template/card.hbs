@@ -11,7 +11,8 @@
       {{curriculum.firstName}}
       {{curriculum.lastName}}</h2>
     <h2>Gender : {{curriculum.gender}}</h2>
-    <ul><strong>Location</strong>
+    <a href="#" class="button boton-location">Location
+    <ul class="display--off">
       <li>City : {{curriculum.city}} </li>
       <li>state : {{curriculum.state}}</li>
       <li>country : {{curriculum.country}}</li>
@@ -22,7 +23,7 @@
           {{curriculum.timezone}}
           {{curriculum.timezoneDes}}</li>
       </ul>
-    </ul>
+      </a>
     <h2>Email : {{curriculum.email}}</h2>
     <h2>Age : {{curriculum.age}}</h2>
     <h2>Date of Birth : {{curriculum.dateBirth}}</h2>
@@ -30,9 +31,10 @@
     
   </article>
   <article class=" title card_thumbnail glow_border">
-   <a  herf="# "class="button view-details">View details
+    <!-- Cambiar a verdad -->
+   <a  herf="# "class="button boton-info">View details
       <ul class="display--off">
-        <li>Seed of code : {{curriculum.seed}}</li>
+        <li>Seed code : {{curriculum.seed}}</li>
         <li>results : {{curriculum.results}}</li>
         <li>page of info: {{curriculum.page}}</li>
         <li>version : v.{{curriculum.version}}</li>
