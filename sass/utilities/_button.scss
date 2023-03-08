@@ -2,7 +2,14 @@
   background-color: var(--Background-black);
   text-decoration: none;
   border: 1px solid var(--Font-blue);
-  box-shadow: inset 0 0 10px var(--base-yellowDark),
-    0 0 20px var(--base-yellowDark);
+  box-shadow: inset 0 0 2px var(--base-yellowDark),
+    0 0 2px var(--base-yellowDark);
+  text-shadow: 0 0 2px var(--base-yellowDark);
   color: var(--Font-blue);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  &:hover {
+    background-color: var(--Background-green);
+  }
 }
