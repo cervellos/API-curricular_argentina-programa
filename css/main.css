@@ -63,9 +63,12 @@ svg:hover {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .button:hover {
   background-color: var(--Background-green);
+  cursor: default;
 }
 
 body {

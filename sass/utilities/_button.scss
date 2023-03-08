@@ -11,5 +11,8 @@
   font-weight: bold;
   &:hover {
     background-color: var(--Background-green);
+    cursor: default;
   }
+  padding-left: 10px;
+  padding-right: 10px;
 }
