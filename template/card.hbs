@@ -6,15 +6,56 @@
       alt="imagen del curriculum"
       id="screen"
     />
-    <h2>Name :
+    <h2 class="card_title">Name :
       {{curriculum.title}}
       {{curriculum.firstName}}
       {{curriculum.lastName}}</h2>
-    <h2>Gender : {{curriculum.gender}}</h2>
-    <h2>Email : {{curriculum.email}}</h2>
-    <h2>Age : {{curriculum.age}}</h2>
-    <h2>Date of Birth : {{curriculum.dateBirth}}</h2>
-    <h2>{{curriculum.id}}</h2>
+    <h3>Gender : {{curriculum.gender}}</h3>
+    <h3>Email : {{curriculum.email}}</h3>
+    <h3>Age : {{curriculum.age}}</h3>
+    <h3>Date of Birth : {{curriculum.dateBirth}}</h3>
+    <h4 class="card_subTitle card_profile">profile</h4>
+    <p class="card_profile_p">I am passionate about technology. Interested and committed to software development; I want to learn from the industry and bring best practices in the teams where I have participated.</p>
+    <h3>{{curriculum.id}}</h3>
+    <a href="#" class="button boton-expertise card_subTitle card_Exp">programming expertise</a>
+    <ul class="display--off">
+    <h3 class="card_Exp_titles">Web Developer, on the Freelancer platform</h3>
+    <p class="card_Exp_paragreph">Freelance work, answering diverse requests oriented to programming with html, css and javascript. Layout from UI prototype, SPA that connect to database, UX design prototypes with figma.</p>
+    <h3 class="card_Exp_titles">Project: E-commerce, Frontend - Backend</h3>
+    <p class="card_Exp_paragreph">Building a visual interface, using html, sass, javascript, node.js, and a template engine (handlebars). Making a client server connection, connecting your requests to the database, and displaying the information dynamically requested by the client.</p>
+    <h3 class="card_Exp_titles">Project: Lint-X, Frontend</h3>
+    <p class="card_Exp_paragreph">Construction of the visual interface of lint-x, with html, sass and native js. Data consumption in MongoDB from a REST API. lint-x is a cybersecurity tool that allows companies to gain visibility and observability on their security posture.</p>
+    </ul>
+    <h4></h4>
+    <a href="#" class="button boton-skills card_subTitle">Job skills</a>
+    <ul class="display--off">
+<li>-Github and Gitlab</li>
+<li>-Agile methodologies (KANBAN and SCRUM)</li>
+<li>-Programming languages:</li>
+<li>-JAVASCRIPT</li>
+<li>-REACT</li>
+<li>-CSS/SASS</li>
+<li>-HTML5</li>
+<li>-NODE.js</li>
+<li>-BASH﻿</li>
+<li>-OnCloud Infrastructure (AWS)</li>
+<li>-Contenerization with Docker</li>
+<li>-Databases (MySQL, FIREBASE, MongoDB)</li>
+<li>-RestAPIs</li>
+<li>-AJAX / XML</li>
+<li>-Debug and Test (Postman, Thunder client)</li>
+    </ul>
+    <h4></h4>
+    <a href="#" class="button boton-education card_subTitle card_education">Education
+      </a>
+    <ul class="display--off">
+      <h3 class="card_education_titles">Full Stack Developer, EducacionIT</h3>
+    <p class="card_education_p"></p>
+      <h3 class="card_education_titles">Certificate - Argentina Programa, endorsed by (CESSI).</h3>
+    <p class="card_education_p">ourse granted by the Government of Argentina, where I learned: fundamentals of web development, logic, object-oriented paradigms, OOP, and database.</p>
+    <h4></h4>
+    </ul>
+    <br>
     <a href="#" class="button boton-location">Location
       </a>
     <ul class="display--off">
@@ -47,8 +88,8 @@
           <li>dischard date : {{curriculum.date}}</li>
           <li>time of system : {{curriculum.ageResg}}</li>
           </ul>
-      <h4>phone : {{curriculum.phone}}</h4>
-      <h4>cell : {{curriculum.cell}}</h4>
+      <h4>local phone : {{curriculum.phone}}</h4>
+      <h4>cellphone : {{curriculum.cell}}</h4>
     
     
   </article>

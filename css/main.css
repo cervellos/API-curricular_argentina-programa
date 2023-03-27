@@ -28,7 +28,7 @@ body {
   --Background-green: #1f280f;
   --Font-orange: #ff5701;
   --Font-red: #bd2a1e;
-  --Font-blue: #00a6bf;
+  --Font-blue: #00a4bd;
   --Font-violet: #8237ac;
   --Font-green: #00d200;
   /*--nouse-x: 100px;
@@ -125,6 +125,11 @@ body {
 .card_img {
   filter: blur(0.6px);
   border-radius: 10px;
+}
+
+ul {
+  padding-left: 1rem;
+  list-style-type: none;
 }
 
 .display--off {

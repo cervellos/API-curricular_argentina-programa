@@ -87,17 +87,26 @@ const paintCard = async (curriculum) => {
       const targe = e.target.classList[1]
       console.log(targe)
       switch (targe) {
-        case "boton-location":
+        case "boton-expertise":
           displays[0].classList.toggle("display--off")
           break
-        case "boton-credencial":
+        case "boton-skills":
           displays[1].classList.toggle("display--off")
           break
-        case "boton-resgistered":
+        case "boton-education":
           displays[2].classList.toggle("display--off")
           break
-        case "boton-info":
+        case "boton-location":
           displays[3].classList.toggle("display--off")
+          break
+        case "boton-credencial":
+          displays[4].classList.toggle("display--off")
+          break
+        case "boton-resgistered":
+          displays[5].classList.toggle("display--off")
+          break
+        case "boton-info":
+          displays[6].classList.toggle("display--off")
           break
       }
     }
