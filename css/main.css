@@ -53,6 +53,10 @@ svg:hover {
   box-shadow: inset 0 0 30px var(--Font-green), 0 0 50px var(--Font-green);
 }
 
+.fa-solid {
+  color: var(--Font-blue);
+}
+
 .button {
   background-color: var(--Background-black);
   text-decoration: none;
