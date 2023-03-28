@@ -10,8 +10,11 @@
   text-transform: uppercase;
   font-weight: bold;
   &:hover {
-    background-color: var(--Background-green);
     cursor: default;
+    color: var(--base-black);
+    background-color: var(--Font-blue);
+    box-shadow: 0 0 10px var(--Font-blue), 0 0 10px var(--Font-blue),
+      inset 0 0 5px var(--Font-blue);
   }
   padding-left: 10px;
   padding-right: 10px;
